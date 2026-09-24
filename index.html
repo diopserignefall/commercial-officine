@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-<meta charset="utf-8">
+<html lang="fr"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Programme Partenaire Commercial - SunuOfficine</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+<title>Programme Partenaire Commercial — SunuOfficine</title>
 <style>
-:root{--bg:#fff;--card:#fff;--soft:#f3f8f5;--tx:#123524;--mu:#5b6f65;--ac:#2f8a5b;--lg:#50b078;--bd:#e3ebe6;--btn:#123524;--btx:#fff}
+:root{--bg:#fff;--card:#fff;--soft:#f3f8f5;--tx:#123524;--mu:#5b6f65;--ac:#2f8a5b;--lg:#50b078;--bd:#e3ebe6;--btn:#123524;--btx:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 *{box-sizing:border-box;margin:0}
-html,body{background:var(--bg);color:var(--tx);font-family:Poppins,Inter,system-ui,sans-serif}
+html,body{background:var(--bg);color:var(--tx);font-family:Poppins,Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
 html{scroll-behavior:smooth;scroll-padding-top:84px}
 .s{padding:88px max(6vw,calc((100vw - 1160px)/2))}
-.s.cover{background:var(--soft)}.s.cover:first-of-type{padding-top:110px;padding-bottom:110px}
+.s.cover{background:var(--soft)}
+.s.cover:first-of-type{padding-top:110px;padding-bottom:110px}
 .cover .in{max-width:880px}
-.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--bd);padding:10px max(6vw,calc((100vw - 1160px)/2));display:flex;align-items:center;justify-content:space-between;gap:16px}
-.top a{font-size:20px;font-weight:700;color:var(--tx);text-decoration:none;letter-spacing:-.02em}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+.ghost{display:inline-block;padding:13px 26px;border-radius:999px;font-weight:600;text-decoration:none;color:var(--tx);border:1.5px solid var(--tx)}
+.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--bd);padding:calc(10px + env(safe-area-inset-top,0px)) max(6vw,calc((100vw - 1160px)/2)) 10px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.top img{height:38px;display:block}
 .menu{display:flex;align-items:center;gap:6px}
 .menu a{font-size:13.5px;font-weight:500;color:var(--mu);text-decoration:none;padding:8px 12px;border-radius:999px}
 .menu a:hover,.menu a.act{color:var(--tx);background:var(--soft)}
 .menu a.pill{background:var(--btn);color:#fff;font-weight:600}
-.bg{display:none;border:0;background:none;color:var(--tx);font-size:24px;padding:4px 10px;cursor:pointer}
+.bg{display:none;background:none;color:var(--tx);font-size:24px;padding:4px 10px}
 @media(max-width:900px){.bg{display:block}.menu{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;background:#fff;border-bottom:1px solid var(--bd);padding:10px 6vw 16px}.menu.open{display:flex}.menu a{padding:12px}}
-footer{padding:32px max(6vw,calc((100vw - 1160px)/2));border-top:1px solid var(--bd);font-size:13px;color:var(--mu);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+footer{padding:32px max(6vw,calc((100vw - 1160px)/2)) calc(32px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--bd);font-size:13px;color:var(--mu);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 .tag{display:inline-block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ac);font-weight:600;margin-bottom:16px}
 h1{font-size:clamp(32px,5.6vw,56px);line-height:1.1;letter-spacing:-.02em;font-weight:700}
 h2{font-size:clamp(25px,3.4vw,36px);line-height:1.2;letter-spacing:-.015em;margin-bottom:12px;font-weight:700}
@@ -31,272 +31,120 @@ h1 em,h2 em{color:var(--lg);font-style:normal}
 .c{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:22px}
 .c h3{font-size:15px;margin-bottom:6px;font-weight:600}.c p{font-size:14px;color:var(--mu);line-height:1.6}
 .ic{width:32px;height:32px;border-radius:50%;background:var(--soft);color:var(--ac);display:grid;place-items:center;font-size:13px;font-weight:700;margin-bottom:12px}
-.hl{background:var(--soft);border-top:3px solid var(--lg)}
+.hl{background:var(--soft);border-color:var(--bd);border-top:3px solid var(--lg)}
 .big{font-size:30px;font-weight:700;letter-spacing:-.02em;margin:6px 0;color:var(--tx)}
 table{width:100%;border-collapse:collapse;font-size:15px}
-td,th{padding:14px 18px;border-bottom:1px solid var(--bd);text-align:left}
-th{color:var(--mu);font-size:11px;text-transform:uppercase;letter-spacing:.12em;font-weight:600}
+td,th{padding:14px 18px;border-bottom:1px solid var(--bd);text-align:left}th{color:var(--mu);font-size:11px;text-transform:uppercase;letter-spacing:.12em;font-weight:600}
 td:last-child{font-weight:700;color:var(--ac)}tr:last-child td{border:0}
 .note{font-size:13px;color:var(--mu);margin-top:20px;line-height:1.6;border-left:3px solid var(--lg);padding-left:14px}
 .steps{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
 .st{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:20px}
-.st b{font-size:20px;color:var(--lg);display:block;margin-bottom:8px;font-weight:700}
-.st span{font-size:14px;color:var(--mu);line-height:1.5}.st h3{font-size:15px;margin-bottom:4px}
+.st b{font-size:20px;color:var(--lg);display:block;margin-bottom:8px;font-weight:700}.st span{font-size:14px;color:var(--mu);line-height:1.5}
+.st h3{font-size:15px;margin-bottom:4px}
 details{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px 18px;margin-bottom:10px;font-size:14px}
-summary{font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}
-summary::-webkit-details-marker{display:none}summary::after{content:"+";color:var(--ac);font-size:18px;line-height:1}
-details[open] summary::after{content:"-"}details[open]{background:var(--soft)}
-details p{color:var(--mu);margin-top:10px;line-height:1.6}
+summary{font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}summary::-webkit-details-marker{display:none}summary:after{content:"+";color:var(--ac);font-size:18px;line-height:1}details[open] summary:after{content:"–"}details[open]{background:var(--soft)}details p{color:var(--mu);margin-top:10px;line-height:1.6}
 .ph{display:inline-block;background:var(--soft);color:var(--mu);border:1px dashed var(--lg);border-radius:8px;padding:8px 12px;margin:4px 6px 4px 0;font-size:12px;font-weight:600}
 button{border:0;background:var(--btn);color:var(--btx);border-radius:999px;padding:9px 20px;font-weight:600;cursor:pointer;font-size:14px;font-family:inherit}
-.cta{display:inline-block;margin-top:20px;background:var(--lg);color:#fff;padding:13px 28px;border-radius:999px;font-weight:600;text-decoration:none}
+.cta{display:inline-block;margin-top:20px;background:var(--lg);color:#fff;padding:13px 28px;border-radius:999px;font-weight:600}
 </style>
-</head>
-<body>
-
-<header class="top">
-  <a href="#accueil">SunuOfficine</a>
-  <button class="bg" id="bg" aria-label="Menu">&#9776;</button>
-  <nav class="menu" id="mn">
-    <a href="#vision">Vision</a>
-    <a href="#solution">Solution</a>
-    <a href="#offres">Offres</a>
-    <a href="#programme">Programme</a>
-    <a href="#commissions">Commissions</a>
-    <a href="#profil">Profil</a>
-    <a href="#parcours">Parcours</a>
-    <a href="#faq">FAQ</a>
-    <a class="pill" href="#contact">Contact</a>
-  </nav>
-</header>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"></head><body>
+<header class="top"><a href="#accueil"><img id="hl" alt="SunuOfficine"></a><button class="bg" id="bg" aria-label="Menu">☰</button><nav class="menu" id="mn"><a href="#vision">Vision</a><a href="#solution">Solution</a><a href="#offres">Offres</a><a href="#programme">Programme</a><a href="#commissions">Commissions</a><a href="#profil">Profil</a><a href="#parcours">Parcours</a><a href="#faq">FAQ</a><a class="pill" href="#contact">Contact</a></nav></header>
 
 <section class="s cover" id="accueil"><div class="in">
-  <div class="tag">GNS SENEGAL presente</div>
-  <h1>Programme Partenaire <em>Commercial</em></h1>
-  <p class="lead">Vous connaissez votre terrain. Nous vous donnons les outils. Developpez votre portefeuille de pharmacies au Senegal.</p>
-  <span class="ph">[NOM DE L ENTREPRISE]</span>
-</div></section>
 
-<section class="s" id="vision">
-  <div class="tag">Notre vision</div>
-  <h2>Plus qu un logiciel : <em>une transformation a porter sur le terrain</em></h2>
-  <p class="lead">Nous ne voulons pas simplement vendre un logiciel. Nous voulons accompagner la transformation numerique des pharmacies et construire un reseau local de partenaires capables de porter cette transformation sur le terrain.</p>
-  <div class="grid">
-    <div class="c"><div class="ic">1</div><h3>Un reseau regional</h3><p>Des partenaires commerciaux dans differentes regions du Senegal.</p></div>
-    <div class="c"><div class="ic">2</div><h3>Une approche humaine</h3><p>Formation, outils et equipe presente a chaque etape.</p></div>
-    <div class="c"><div class="ic">3</div><h3>Une croissance progressive</h3><p>Pharmacie apres pharmacie, dans la duree.</p></div>
-  </div>
-</section>
+<div class="tag">GNS SENEGAL présente</div>
+<h1>Programme Partenaire <em>Commercial</em></h1>
+<p class="lead">Vous connaissez votre terrain. Nous vous donnons les outils. Développez votre portefeuille de pharmacies au Sénégal.</p>
+<div class="btns"><a class="cta" style="text-decoration:none;margin:0" href="#contact">Devenir partenaire</a><a class="ghost" href="#commissions">Voir le système de commissions</a></div></div></section>
 
-<section class="s" id="solution">
-  <div class="tag">La solution</div>
-  <h2>Un seul outil pour gerer <em>votre officine et votre equipe</em></h2>
-  <p class="lead">SunuOfficine est une solution moderne de gestion pour pharmacies et officines : simple, accessible, adaptee aux realites du comptoir, et accompagnee par une equipe.</p>
-  <div class="grid">
-    <div class="c hl"><h3>Simple</h3><p>Prise en main rapide pour toute l equipe.</p></div>
-    <div class="c hl"><h3>Moderne</h3><p>Cloud, sauvegardes automatiques, mises a jour.</p></div>
-    <div class="c hl"><h3>Accessible</h3><p>Formules flexibles, sans engagement possible.</p></div>
-    <div class="c hl"><h3>Accompagnee</h3><p>Support technique et equipe dediee.</p></div>
-  </div>
-</section>
+<section class="s" id="vision"><div class="tag">Notre vision</div>
+<h2>Plus qu'un logiciel : <em>une transformation à porter sur le terrain</em></h2>
+<p class="lead">Nous ne voulons pas simplement vendre un logiciel. Nous voulons accompagner la transformation numérique des pharmacies et construire un réseau local de partenaires capables de porter cette transformation sur le terrain.</p>
+<div class="grid"><div class="c"><div class="ic">1</div><h3>Un réseau régional</h3><p>Des partenaires commerciaux dans différentes régions du Sénégal.</p></div><div class="c"><div class="ic">2</div><h3>Une approche humaine</h3><p>Formation, outils et équipe présente à chaque étape.</p></div><div class="c"><div class="ic">3</div><h3>Une croissance progressive</h3><p>Pharmacie après pharmacie, dans la durée.</p></div></div></section>
 
-<section class="s" id="fonctionnalites">
-  <div class="tag">Fonctionnalites et benefices</div>
-  <h2>Ce que la pharmacie <em>y gagne concretement</em></h2>
-  <p class="lead" style="margin-bottom:18px">Cliquez sur une fonctionnalite pour voir ce qu elle apporte au quotidien.</p>
-  <div class="grid" style="align-items:start">
-    <div>
-      <details><summary>Caisse de vente et encaissements illimites</summary><p>Enregistrez les ventes au comptoir et les encaissements sans limite de volume, pour un passage en caisse fluide et suivi.</p></details>
-      <details><summary>Gestion complete des stocks</summary><p>Gardez une vision claire de ce qui est en rayon et de ce qui manque, pour mieux suivre vos stocks au quotidien.</p></details>
-      <details><summary>Produits et peremptions</summary><p>Suivez vos produits et leurs dates de peremption pour mieux anticiper et limiter les pertes.</p></details>
-      <details><summary>IPM et Tiers-payant</summary><p>Prise en charge des ventes IPM et tiers-payant, une realite du quotidien des officines au Senegal.</p></details>
-      <details><summary>Rapports financiers</summary><p>Des rapports pour comprendre l activite et disposer d une meilleure visibilite sur les ventes.</p></details>
-      <details><summary>Clotures de caisse</summary><p>Une cloture structuree en fin de journee pour reduire les erreurs et faciliter le controle.</p></details>
-    </div>
-    <div>
-      <details><summary>Sauvegardes cloud automatiques</summary><p>Les donnees sont sauvegardees automatiquement dans le cloud, pour securiser l activite de la pharmacie.</p></details>
-      <details><summary>Gestion des utilisateurs</summary><p>Chaque membre de l equipe dispose de son acces, pour faciliter le travail et le suivi de l activite.</p></details>
-      <details><summary>Suivi de l activite</summary><p>Une vue d ensemble de l activite de l officine pour piloter avec plus de visibilite.</p></details>
-      <details><summary>Evolutions et mises a jour</summary><p>Le logiciel evolue et recoit des mises a jour, sans que la pharmacie ait a s en charger.</p></details>
-      <details><summary>Support technique</summary><p>Une equipe disponible pour accompagner la pharmacie en cas de question ou de difficulte.</p></details>
-    </div>
-  </div>
-  <div class="c" style="margin-top:16px"><h3>Benefices concrets pour la pharmacie</h3><p>Gagner du temps · Mieux suivre les stocks · Reduire les erreurs · Meilleure visibilite sur l activite · Faciliter le travail de l equipe · Mieux suivre les ventes · Securiser les donnees · Disposer d outils modernes de gestion.</p></div>
-</section>
+<section class="s" id="solution"><div class="tag">La solution</div>
+<h2>Un seul outil pour gérer <em>votre officine et votre équipe</em></h2>
+<p class="lead">SunuOfficine est une solution moderne de gestion pour pharmacies et officines : simple, accessible, adaptée aux réalités du comptoir, et accompagnée par une équipe.</p>
+<div class="grid"><div class="c hl"><h3>Simple</h3><p>Prise en main rapide pour toute l'équipe.</p></div><div class="c hl"><h3>Moderne</h3><p>Cloud, sauvegardes automatiques, mises à jour.</p></div><div class="c hl"><h3>Accessible</h3><p>Formules flexibles, sans engagement possible.</p></div><div class="c hl"><h3>Accompagnée</h3><p>Support technique et équipe dédiée.</p></div></div></section>
 
-<section class="s" id="offres">
-  <div class="tag">Offres et tarifs</div>
-  <h2>Trois formules, <em>claires et transparentes</em></h2>
-  <div class="grid" style="margin-top:20px">
-    <div class="c"><h3>Flexible</h3><div class="big">34 900 F</div><p>FCFA / mois<br>Sans engagement.</p></div>
-    <div class="c"><h3>Annuelle - 5 fois</h3><div class="big">69 800 F</div><p>FCFA / echeance x 5 echeances<br>Total : 349 000 FCFA - 12 mois de couverture.</p></div>
-    <div class="c hl"><h3>Serenite annuelle</h3><div class="big">349 000 F</div><p>FCFA / an, paiement comptant<br>12 mois de couverture - 2 mois offerts par rapport au mensuel.</p></div>
-  </div>
-  <div style="margin-top:18px">
-    <details><summary>A qui s adresse la formule Flexible ?</summary><p>A la pharmacie qui souhaite demarrer sans engagement, avec un paiement mensuel de 34 900 FCFA.</p></details>
-    <details><summary>Comment fonctionne le paiement annuel en 5 fois ?</summary><p>La pharmacie regle 5 echeances de 69 800 FCFA, soit 349 000 FCFA au total, pour 12 mois de couverture.</p></details>
-    <details><summary>Que comprend la formule Serenite annuelle ?</summary><p>Un paiement comptant de 349 000 FCFA pour 12 mois de couverture, avec 2 mois offerts par rapport au paiement mensuel.</p></details>
-  </div>
-</section>
+<section class="s" id="fonctionnalites"><div class="tag">Fonctionnalités &amp; bénéfices</div>
+<h2>Ce que la pharmacie <em>y gagne concrètement</em></h2>
+<p class="lead" style="margin-bottom:18px">Cliquez sur une fonctionnalité pour voir ce qu'elle apporte au quotidien.</p>
+<div class="grid" style="align-items:start"><div><details><summary>Caisse de vente et encaissements illimités</summary><p>Enregistrez les ventes au comptoir et les encaissements sans limite de volume, pour un passage en caisse fluide et suivi.</p></details><details><summary>Gestion complète des stocks</summary><p>Gardez une vision claire de ce qui est en rayon et de ce qui manque, pour mieux suivre vos stocks au quotidien.</p></details><details><summary>Produits et péremptions</summary><p>Suivez vos produits et leurs dates de péremption pour mieux anticiper et limiter les pertes.</p></details><details><summary>IPM &amp; Tiers-payant</summary><p>Prise en charge des ventes IPM et tiers-payant, une réalité du quotidien des officines au Sénégal.</p></details><details><summary>Rapports financiers</summary><p>Des rapports pour comprendre l'activité et disposer d'une meilleure visibilité sur les ventes.</p></details><details><summary>Clôtures de caisse</summary><p>Une clôture structurée en fin de journée pour réduire les erreurs et faciliter le contrôle.</p></details></div><div><details><summary>Sauvegardes cloud automatiques</summary><p>Les données sont sauvegardées automatiquement dans le cloud, pour sécuriser l'activité de la pharmacie.</p></details><details><summary>Gestion des utilisateurs</summary><p>Chaque membre de l'équipe dispose de son accès, pour faciliter le travail et le suivi de l'activité.</p></details><details><summary>Suivi de l'activité</summary><p>Une vue d'ensemble de l'activité de l'officine pour piloter avec plus de visibilité.</p></details><details><summary>Évolutions et mises à jour</summary><p>Le logiciel évolue et reçoit des mises à jour, sans que la pharmacie ait à s'en charger.</p></details><details><summary>Support technique</summary><p>Une équipe disponible pour accompagner la pharmacie en cas de question ou de difficulté.</p></details></div></div><div class="c" style="margin-top:16px"><h3>Bénéfices concrets pour la pharmacie</h3><p>Gagner du temps · Mieux suivre les stocks · Réduire les erreurs · Meilleure visibilité sur l'activité · Faciliter le travail de l'équipe · Mieux suivre les ventes · Sécuriser les données · Disposer d'outils modernes de gestion.</p></div></section>
 
-<section class="s" id="programme">
-  <div class="tag">Le programme</div>
-  <h2>Devenez <em>partenaire commercial</em></h2>
-  <p class="lead">Developpez votre reseau. Construisez votre portefeuille. Generez des revenus recurrents. Travaillez dans votre ville, votre region ou votre zone geographique : nous fournissons le produit, vous developpez la relation.</p>
-  <div class="grid">
-    <div class="c"><h3>Votre role</h3><p>Identifier, contacter, presenter, demontrer, accompagner jusqu a l abonnement, entretenir la relation.</p></div>
-    <div class="c"><h3>Notre role</h3><p>Logiciel, formation, argumentaire, supports, demonstration, compte partenaire, support WhatsApp, suivi des commissions.</p></div>
-  </div>
-</section>
+<section class="s" id="offres"><div class="tag">Offres &amp; tarifs</div>
+<h2>Trois formules, <em>claires et transparentes</em></h2>
+<div class="grid" style="margin-top:20px">
+<div class="c"><h3>Flexible</h3><div class="big">34 900 F</div><p>FCFA / mois<br>Sans engagement.</p></div>
+<div class="c"><h3>Annuelle — 5 fois</h3><div class="big">69 800 F</div><p>FCFA / échéance · 5 échéances<br>Total : 349 000 FCFA · 12 mois de couverture.</p></div>
+<div class="c hl"><h3>Sérénité annuelle</h3><div class="big">349 000 F</div><p>FCFA / an, paiement comptant<br>12 mois de couverture · 2 mois offerts par rapport au mensuel.</p></div></div><div style="margin-top:18px"><details><summary>À qui s'adresse la formule Flexible ?</summary><p>À la pharmacie qui souhaite démarrer sans engagement, avec un paiement mensuel de 34 900 FCFA.</p></details><details><summary>Comment fonctionne le paiement annuel en 5 fois ?</summary><p>La pharmacie règle 5 échéances de 69 800 FCFA, soit 349 000 FCFA au total, pour 12 mois de couverture.</p></details><details><summary>Que comprend la formule Sérénité annuelle ?</summary><p>Un paiement comptant de 349 000 FCFA pour 12 mois de couverture, avec 2 mois offerts par rapport au paiement mensuel.</p></details></div></section>
 
-<section class="s" id="outils">
-  <div class="tag">Ce que nous fournissons</div>
-  <h2>Sept outils <em>mis a votre disposition</em></h2>
-  <div class="grid" style="margin-top:18px">
-    <div class="c"><div class="ic">1</div><h3>Presentation du logiciel</h3><p>Formation claire sur la solution et ses fonctionnalites.</p></div>
-    <div class="c"><div class="ic">2</div><h3>Argumentaire commercial</h3><p>Quoi dire, comment presenter, comment repondre aux objections.</p></div>
-    <div class="c"><div class="ic">3</div><h3>Demonstration</h3><p>Une methode structuree pour presenter aux pharmacies.</p></div>
-    <div class="c"><div class="ic">4</div><h3>Compte partenaire</h3><p>Suivi des prospects, pharmacies et commissions.</p></div>
-    <div class="c"><div class="ic">5</div><h3>Formation</h3><p>Initiale : produit et demarche commerciale.</p></div>
-    <div class="c"><div class="ic">6</div><h3>Support WhatsApp</h3><p>Une equipe qui repond en cas de difficulte.</p></div>
-    <div class="c"><div class="ic">7</div><h3>Tableau de commissions</h3><p>Suivi transparent des pharmacies et commissions.</p></div>
-  </div>
-</section>
+<section class="s" id="programme"><div class="tag">Le programme</div>
+<h2>Devenez <em>partenaire commercial</em></h2>
+<p class="lead">Développez votre réseau. Construisez votre portefeuille. Générez des revenus récurrents. Travaillez dans votre ville, votre région ou votre zone géographique : nous fournissons le produit, vous développez la relation.</p>
+<div class="grid"><div class="c"><h3>Votre rôle</h3><p>Identifier, contacter, présenter, démontrer, accompagner jusqu'à l'abonnement, entretenir la relation.</p></div><div class="c"><h3>Notre rôle</h3><p>Logiciel, formation, argumentaire, supports, démonstration, compte partenaire, support WhatsApp, suivi des commissions.</p></div></div></section>
 
-<section class="s" id="commissions">
-  <div class="tag">Systeme de commissions</div>
-  <h2>Une prime, puis <em>une commission recurrente</em></h2>
-  <div class="grid" style="margin:20px 0">
-    <div class="c hl"><h3>Prime d acquisition</h3><div class="big">10 000 FCFA</div><p>Par pharmacie ayant souscrit et paye.</p></div>
-    <div class="c hl"><h3>Commission recurrente</h3><div class="big">5 000 FCFA / mois</div><p>Tant que la pharmacie reste active et regle son abonnement, selon les conditions du programme.</p></div>
-  </div>
-  <p class="note">Les commissions dependent des ventes reellement realisees et des abonnements effectivement payes. Aucun revenu n est garanti.</p>
-</section>
+<section class="s" id="outils"><div class="tag">Ce que nous fournissons</div>
+<h2>Sept outils <em>mis à votre disposition</em></h2>
+<div class="grid" style="margin-top:18px">
+<div class="c"><div class="ic">1</div><h3>Présentation du logiciel</h3><p>Formation claire sur la solution et ses fonctionnalités.</p></div>
+<div class="c"><div class="ic">2</div><h3>Argumentaire commercial</h3><p>Quoi dire, comment présenter, comment répondre aux objections.</p></div>
+<div class="c"><div class="ic">3</div><h3>Démonstration</h3><p>Une méthode structurée pour présenter aux pharmacies.</p></div>
+<div class="c"><div class="ic">4</div><h3>Compte partenaire</h3><p>Suivi des prospects, pharmacies et commissions.</p></div>
+<div class="c"><div class="ic">5</div><h3>Formation</h3><p>Initiale : produit et démarche commerciale.</p></div>
+<div class="c"><div class="ic">6</div><h3>Support WhatsApp</h3><p>Une équipe qui répond en cas de difficulté.</p></div>
+<div class="c"><div class="ic">7</div><h3>Tableau de commissions</h3><p>Suivi transparent des pharmacies et commissions.</p></div></div></section>
 
-<section class="s" id="exemples">
-  <div class="tag">Exemples de portefeuille</div>
-  <h2>Construisez, <em>pharmacie apres pharmacie</em></h2>
-  <div class="c" style="margin:18px 0;padding:6px">
-    <table>
-      <tr><th>Pharmacies actives</th><th>Potentiel mensuel</th></tr>
-      <tr><td>1 pharmacie</td><td>5 000 FCFA / mois</td></tr>
-      <tr><td>3 pharmacies</td><td>15 000 FCFA / mois</td></tr>
-      <tr><td>5 pharmacies</td><td>25 000 FCFA / mois</td></tr>
-      <tr><td>10 pharmacies</td><td>50 000 FCFA / mois</td></tr>
-      <tr><td>20 pharmacies</td><td>100 000 FCFA / mois</td></tr>
-      <tr><td>50 pharmacies</td><td>250 000 FCFA / mois</td></tr>
-    </table>
-  </div>
-  <div class="grid">
-    <div class="c"><h3>Aujourd hui</h3><p>Votre premiere pharmacie.</p></div>
-    <div class="c"><h3>Demain</h3><p>Un portefeuille de 5 pharmacies.</p></div>
-    <div class="c"><h3>Ensuite</h3><p>10, 20 pharmacies ou davantage.</p></div>
-  </div>
-  <p class="note">Potentiel de commission base sur le nombre de pharmacies actives (hors prime d acquisition), et non promesse de revenu.</p>
-</section>
+<section class="s" id="commissions"><div class="tag">Système de commissions</div>
+<h2>Une prime, puis <em>une commission récurrente</em></h2>
+<div class="grid" style="margin:20px 0">
+<div class="c hl"><h3>Prime d'acquisition</h3><div class="big">10 000 FCFA</div><p>Par pharmacie ayant souscrit et payé.</p></div>
+<div class="c hl"><h3>Commission récurrente</h3><div class="big">5 000 FCFA / mois</div><p>Tant que la pharmacie reste active et règle son abonnement, selon les conditions du programme.</p></div></div>
+<p class="note">Les commissions dépendent des ventes réellement réalisées et des abonnements effectivement payés. Aucun revenu n'est garanti.</p></section>
 
-<section class="s" id="profil">
-  <div class="tag">Profil recherche</div>
-  <h2>Qui peut devenir <em>partenaire ?</em></h2>
-  <p class="lead">Pas besoin d etre developpeur. Ce qui compte : serieux, motivation, sens relationnel, discipline, organisation et capacite a prospecter.</p>
-  <div class="grid">
-    <div class="c"><p>Commerciaux independants</p></div>
-    <div class="c"><p>Entrepreneurs</p></div>
-    <div class="c"><p>Jeunes professionnels</p></div>
-    <div class="c"><p>Consultants</p></div>
-    <div class="c"><p>Personnes avec un reseau local</p></div>
-    <div class="c"><p>Connaisseurs des pharmacies et de la sante</p></div>
-    <div class="c"><p>A l aise sur le terrain</p></div>
-    <div class="c"><p>Interesses par le numerique</p></div>
-  </div>
-</section>
+<section class="s" id="exemples"><div class="tag">Exemples de portefeuille</div>
+<h2>Construisez, <em>pharmacie après pharmacie</em></h2>
+<div class="c" style="margin:18px 0;padding:6px"><table><tr><th>Pharmacies actives</th><th>Potentiel mensuel</th></tr>
+<tr><td>1 pharmacie</td><td>5 000 FCFA / mois</td></tr><tr><td>3 pharmacies</td><td>15 000 FCFA / mois</td></tr><tr><td>5 pharmacies</td><td>25 000 FCFA / mois</td></tr><tr><td>10 pharmacies</td><td>50 000 FCFA / mois</td></tr><tr><td>20 pharmacies</td><td>100 000 FCFA / mois</td></tr><tr><td>50 pharmacies</td><td>250 000 FCFA / mois</td></tr></table></div>
+<div class="grid"><div class="c"><h3>Aujourd'hui</h3><p>Votre première pharmacie.</p></div><div class="c"><h3>Demain</h3><p>Un portefeuille de 5 pharmacies.</p></div><div class="c"><h3>Ensuite</h3><p>10, 20 pharmacies ou davantage.</p></div></div>
+<p class="note">Potentiel de commission basé sur le nombre de pharmacies actives (hors prime d'acquisition), et non promesse de revenu.</p></section>
 
-<section class="s" id="parcours">
-  <div class="tag">Parcours d integration</div>
-  <h2>Sept etapes <em>jusqu a vos premieres commissions</em></h2>
-  <div class="steps" style="margin-top:20px">
-    <div class="st"><b>01</b><span>Candidature / integration</span></div>
-    <div class="st"><b>02</b><span>Presentation de l entreprise et du programme</span></div>
-    <div class="st"><b>03</b><span>Formation au logiciel</span></div>
-    <div class="st"><b>04</b><span>Formation commerciale</span></div>
-    <div class="st"><b>05</b><span>Activation du compte partenaire</span></div>
-    <div class="st"><b>06</b><span>Debut de la prospection</span></div>
-    <div class="st"><b>07</b><span>Suivi des ventes et commissions</span></div>
-  </div>
-</section>
+<section class="s" id="profil"><div class="tag">Profil recherché</div>
+<h2>Qui peut devenir <em>partenaire ?</em></h2>
+<p class="lead">Pas besoin d'être développeur. Ce qui compte : sérieux, motivation, sens relationnel, discipline, organisation et capacité à prospecter.</p>
+<div class="grid"><div class="c"><p>Commerciaux indépendants</p></div><div class="c"><p>Entrepreneurs</p></div><div class="c"><p>Jeunes professionnels</p></div><div class="c"><p>Consultants</p></div><div class="c"><p>Personnes avec un réseau local</p></div><div class="c"><p>Connaisseurs des pharmacies et de la santé</p></div><div class="c"><p>À l'aise sur le terrain</p></div><div class="c"><p>Intéressés par le numérique</p></div></div></section>
 
-<section class="s" id="mission">
-  <div class="tag">Votre mission</div>
-  <h2>Votre mission <em>en 4 etapes</em></h2>
-  <div class="steps" style="margin-top:20px">
-    <div class="st"><b>1</b><h3>Prospecter</h3><span>Identifier les pharmacies de votre zone.</span></div>
-    <div class="st"><b>2</b><h3>Contacter</h3><span>Prendre contact avec les responsables.</span></div>
-    <div class="st"><b>3</b><h3>Presenter</h3><span>Exposer les benefices de la solution.</span></div>
-    <div class="st"><b>4</b><h3>Convertir</h3><span>Accompagner jusqu a l abonnement.</span></div>
-  </div>
-  <p class="note">Notre equipe vous accompagne lorsque vous avez besoin d aide.</p>
-</section>
+<section class="s" id="parcours"><div class="tag">Parcours d'intégration</div>
+<h2>Sept étapes <em>jusqu'à vos premières commissions</em></h2>
+<div class="steps" style="margin-top:20px">
+<div class="st"><b>01</b><span>Candidature / intégration</span></div><div class="st"><b>02</b><span>Présentation de l'entreprise et du programme</span></div><div class="st"><b>03</b><span>Formation au logiciel</span></div><div class="st"><b>04</b><span>Formation commerciale</span></div><div class="st"><b>05</b><span>Activation du compte partenaire</span></div><div class="st"><b>06</b><span>Début de la prospection</span></div><div class="st"><b>07</b><span>Suivi des ventes et commissions</span></div></div></section>
 
-<section class="s" id="accompagnement">
-  <div class="tag">Notre accompagnement</div>
-  <h2>Pourquoi <em>rejoindre le programme ?</em></h2>
-  <div class="grid" style="margin-top:18px">
-    <div class="c"><h3>Un produit concret</h3></div>
-    <div class="c"><h3>Une formation</h3></div>
-    <div class="c"><h3>Des outils commerciaux</h3></div>
-    <div class="c"><h3>Une equipe a vos cotes</h3></div>
-    <div class="c"><h3>Votre propre zone</h3></div>
-    <div class="c"><h3>Un reseau professionnel</h3></div>
-    <div class="c"><h3>Un systeme de commissions</h3></div>
-    <div class="c"><h3>Un portefeuille qui grandit</h3></div>
-  </div>
-</section>
+<section class="s" id="mission"><div class="tag">Votre mission</div>
+<h2>Votre mission <em>en 4 étapes</em></h2>
+<div class="steps" style="margin-top:20px">
+<div class="st"><b>1</b><h3>Prospecter</h3><span>Identifier les pharmacies de votre zone.</span></div><div class="st"><b>2</b><h3>Contacter</h3><span>Prendre contact avec les responsables.</span></div><div class="st"><b>3</b><h3>Présenter</h3><span>Exposer les bénéfices de la solution.</span></div><div class="st"><b>4</b><h3>Convertir</h3><span>Accompagner jusqu'à l'abonnement.</span></div></div>
+<p class="note">Notre équipe vous accompagne lorsque vous avez besoin d'aide.</p></section>
 
-<section class="s" id="faq">
-  <div class="tag">FAQ</div>
-  <h2>Vos <em>questions</em></h2>
-  <div style="margin-top:16px">
-    <details open><summary>Dois-je etre developpeur ?</summary><p>Non. Votre role est commercial : identifier les pharmacies, prendre contact, presenter la solution et accompagner la pharmacie jusqu a son abonnement. Le logiciel, la formation, l argumentaire et la methode de demonstration sont fournis par l equipe.</p></details>
-    <details><summary>Dois-je avoir une entreprise ?</summary><p>A definir dans les conditions du programme partenaire.</p></details>
-    <details><summary>Comment suis-je paye ? Quand ma commission est-elle declenchee ?</summary><p>La commission est declenchee pour une pharmacie qui a effectivement souscrit et paye : une prime d acquisition de 10 000 FCFA, puis 5 000 FCFA par mois. Modalites et calendrier de paiement : A definir dans les conditions du programme partenaire.</p></details>
-    <details><summary>Que se passe-t-il si la pharmacie ne paie plus ?</summary><p>La commission recurrente est versee tant que la pharmacie reste active et regle son abonnement. Les cas particuliers : A definir dans les conditions du programme partenaire.</p></details>
-    <details><summary>Comment une pharmacie est-elle attribuee a un partenaire ?</summary><p>A definir dans les conditions du programme partenaire. Le compte partenaire sert a suivre vos prospects et vos pharmacies.</p></details>
-    <details><summary>Que se passe-t-il si deux commerciaux revendiquent la meme pharmacie ?</summary><p>A definir dans les conditions du programme partenaire.</p></details>
-    <details><summary>Puis-je travailler dans plusieurs villes ?</summary><p>Le programme est pense pour que vous travailliez dans votre ville, votre region ou votre zone geographique. Regles applicables a plusieurs zones : A definir dans les conditions du programme partenaire.</p></details>
-    <details><summary>Qui fait la demonstration ?</summary><p>Vous etes forme a la demonstration et disposez d une methode structuree. L equipe peut vous aider via le support WhatsApp.</p></details>
-    <details><summary>Qui accompagne la pharmacie apres la vente ?</summary><p>Le logiciel est accompagne d un support technique. Repartition precise des roles : A definir dans les conditions du programme partenaire.</p></details>
-    <details><summary>Comment suivre mes commissions ?</summary><p>Grace a votre compte partenaire et au tableau de commissions qui offre un suivi transparent des pharmacies apportees.</p></details>
-    <details><summary>Puis-je esperer un revenu garanti ?</summary><p>Non. Les montants presentes sont un potentiel base sur le nombre de pharmacies actives. Les commissions dependent des ventes reellement realisees et des abonnements effectivement payes.</p></details>
-  </div>
-</section>
+<section class="s" id="accompagnement"><div class="tag">Notre accompagnement</div>
+<h2>Pourquoi <em>rejoindre le programme ?</em></h2>
+<div class="grid" style="margin-top:18px">
+<div class="c"><h3>Un produit concret</h3></div><div class="c"><h3>Une formation</h3></div><div class="c"><h3>Des outils commerciaux</h3></div><div class="c"><h3>Une équipe à vos côtés</h3></div><div class="c"><h3>Votre propre zone</h3></div><div class="c"><h3>Un réseau professionnel</h3></div><div class="c"><h3>Un système de commissions</h3></div><div class="c"><h3>Un portefeuille qui grandit</h3></div></div></section>
 
-<section class="s cover" id="contact"><div class="in">
-  <div class="tag">Rejoignez-nous</div>
-  <h1>Pret a developper <em>votre reseau ?</em></h1>
-  <p class="lead">Rejoignez notre programme partenaire et commencez a developper votre portefeuille de pharmacies.</p>
-  <div class="grid" style="margin:8px 0 8px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
-    <div class="c" style="padding:14px 18px"><p style="font-size:11px;letter-spacing:.12em;text-transform:uppercase">Entreprise</p><h3 style="margin:4px 0 0">GNS SENEGAL</h3></div>
-    <div class="c" style="padding:14px 18px"><p style="font-size:11px;letter-spacing:.12em;text-transform:uppercase">Logiciel</p><h3 style="margin:4px 0 0">SunuOfficine</h3></div>
-    <div class="c" style="padding:14px 18px"><p style="font-size:11px;letter-spacing:.12em;text-transform:uppercase">Site web</p><h3 style="margin:4px 0 0">sunuofficine.app</h3></div>
-    <div class="c" style="padding:14px 18px"><p style="font-size:11px;letter-spacing:.12em;text-transform:uppercase">Telephone</p><h3 style="margin:4px 0 0">+221 76 276 97 89</h3></div>
-    <div class="c" style="padding:14px 18px"><p style="font-size:11px;letter-spacing:.12em;text-transform:uppercase">WhatsApp</p><h3 style="margin:4px 0 0">+221 76 276 97 89</h3></div>
-    <div class="c" style="padding:14px 18px"><p style="font-size:11px;letter-spacing:.12em;text-transform:uppercase">Email</p><h3 style="margin:4px 0 0">sunuofficine@gmail.com</h3></div>
-    <div class="c" style="padding:14px 18px"><p style="font-size:11px;letter-spacing:.12em;text-transform:uppercase">Responsable commercial</p><h3 style="margin:4px 0 0">Serigne Fall</h3></div>
-  </div>
-  <a class="cta" href="https://wa.me/221762769789">Devenir partenaire sur WhatsApp</a>
-</div></section>
+<section class="s" id="faq"><div class="tag">FAQ</div><h2>Vos <em>questions</em></h2><div style="margin-top:16px"><details open><summary>Dois-je être développeur ?</summary><p>Non. Votre rôle est commercial : identifier les pharmacies, prendre contact, présenter la solution et accompagner la pharmacie jusqu'à son abonnement. Le logiciel, la formation, l'argumentaire et la méthode de démonstration sont fournis par l'équipe.</p></details><details><summary>Dois-je avoir une entreprise ?</summary><p>À définir dans les conditions du programme partenaire.</p></details><details><summary>Comment suis-je payé ? Quand ma commission est-elle déclenchée ?</summary><p>La commission est déclenchée pour une pharmacie qui a effectivement souscrit et payé : une prime d'acquisition de 10 000 FCFA, puis 5 000 FCFA par mois. Modalités et calendrier de paiement : À définir dans les conditions du programme partenaire.</p></details><details><summary>Que se passe-t-il si la pharmacie ne paie plus ?</summary><p>La commission récurrente est versée tant que la pharmacie reste active et règle son abonnement, selon les conditions du programme. Les cas particuliers (retard, suspension, résiliation) : À définir dans les conditions du programme partenaire.</p></details><details><summary>Comment une pharmacie est-elle attribuée à un partenaire ?</summary><p>À définir dans les conditions du programme partenaire. Le compte partenaire sert à suivre vos prospects et vos pharmacies.</p></details><details><summary>Que se passe-t-il si deux commerciaux revendiquent la même pharmacie ?</summary><p>À définir dans les conditions du programme partenaire.</p></details><details><summary>Puis-je travailler dans plusieurs villes ?</summary><p>Le programme est pensé pour que vous travailliez dans votre ville, votre région ou votre zone géographique. Règles applicables à plusieurs villes ou zones : À définir dans les conditions du programme partenaire.</p></details><details><summary>Qui fait la démonstration ?</summary><p>Vous êtes formé à la démonstration et disposez d'une méthode structurée pour présenter le logiciel. L'équipe peut vous aider lorsque vous rencontrez une difficulté, via le support WhatsApp. Organisation détaillée des démonstrations : À définir dans les conditions du programme partenaire.</p></details><details><summary>Qui accompagne la pharmacie après la vente ?</summary><p>Le logiciel est accompagné d'un support technique. Répartition précise des rôles entre l'équipe et le partenaire après la vente : À définir dans les conditions du programme partenaire.</p></details><details><summary>Comment suivre mes commissions ?</summary><p>Grâce à votre compte partenaire, qui permet de suivre prospects, pharmacies et commissions, et au tableau de commissions qui offre un suivi transparent des pharmacies apportées.</p></details><details><summary>Puis-je espérer un revenu garanti ?</summary><p>Non. Les montants présentés sont un potentiel basé sur le nombre de pharmacies actives. Les commissions dépendent des ventes réellement réalisées et des abonnements effectivement payés.</p></details></div></section>
 
-<footer>
-  <span>GNS SENEGAL - SunuOfficine - Programme Partenaire Commercial</span>
-  <span>sunuofficine.app - +221 76 276 97 89</span>
-</footer>
+<section class="s cover" id="contact"><div class="in"><div class="tag">Rejoignez-nous</div>
+<h1>Prêt à développer <em>votre réseau ?</em></h1>
+<p class="lead">Rejoignez notre programme partenaire et commencez à développer votre portefeuille de pharmacies.</p>
+<div class="grid" style="margin:8px 0 8px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))"><div class="c" style="padding:14px 18px"><p style="font-size:11px;letter-spacing:.12em;text-transform:uppercase">Entreprise</p><h3 style="margin:4px 0 0">GNS SENEGAL</h3></div><div class="c" style="padding:14px 18px"><p style="font-size:11px;letter-spacing:.12em;text-transform:uppercase">Logiciel</p><h3 style="margin:4px 0 0">SunuOfficine</h3></div><div class="c" style="padding:14px 18px"><p style="font-size:11px;letter-spacing:.12em;text-transform:uppercase">Site web</p><h3 style="margin:4px 0 0">sunuofficine.app</h3></div><div class="c" style="padding:14px 18px"><p style="font-size:11px;letter-spacing:.12em;text-transform:uppercase">Téléphone</p><h3 style="margin:4px 0 0">+221 76 276 97 89</h3></div><div class="c" style="padding:14px 18px"><p style="font-size:11px;letter-spacing:.12em;text-transform:uppercase">WhatsApp</p><h3 style="margin:4px 0 0">+221 76 276 97 89</h3></div><div class="c" style="padding:14px 18px"><p style="font-size:11px;letter-spacing:.12em;text-transform:uppercase">Email</p><h3 style="margin:4px 0 0">sunuofficine@gmail.com</h3></div><div class="c" style="padding:14px 18px"><p style="font-size:11px;letter-spacing:.12em;text-transform:uppercase">Responsable commercial</p><h3 style="margin:4px 0 0">Serigne Fall</h3></div></div>
+<a class="cta" style="text-decoration:none" href="https://wa.me/221762769789">Devenir partenaire sur WhatsApp</a></div></section>
 
+<img id="lg" alt="SunuOfficine" style="display:none" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfIAAAB2CAYAAAAzxxGqAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAB8qADAAQAAAABAAAAdgAAAADQIEnfAAA30ElEQVR4Ae1dB4AURdZ+SA4b2MQuack55yxZBQHRQxRRMd0Z8fTM+fTOLPobOEzIeQKCIogKYkCC5Jxz3F1gWdgIS4b/vQq9PTM90z27s8vM7iuZqapXr15Vfz3u16+6QqlLGIADI8AIMAKMACPACIQkAleEZK+504wAI8AIMAKMACMgEGAi5x8CI8AIMAKMACMQwggwkYfwzeOuMwKMACPACDACTOT8G2AEGAFGgBFgBEIYASbyEL553HVGgBFgBBgBRoCJnH8DjAAjwAgwAoxACCPARB7CN4+7zggwAowAI8AIMJHzb4ARYAQYAUaAEQhhBJjIQ/jmcdcZAUaAEWAEGAEmcv4NMAKMACPACDACIYwAE3kI3zzuOiPACDACjAAjwETOvwFGgBFgBBgBRiCEESgTwn0vtK5nnMqB3ceTYX/mYUjJToPUnONwPDcbsk+fhNyzp+HchfMAeNZMmStKQ8Wy5SG8fGWIqhgO8WHRUCMiFupUrQ4NY2tBVKXwQusjG2YEGAFGgBFgBAiBUnz6GcD5ixdgVco2WHtoB2w8shuSs9IEURNA+nA4EdM5ceqwOJ2/BCi0kqNerchq0Kp6Q+hQuyl0qdNSED/Z5MAIMAKMACPACAQKgRJN5ETeiw6shz8PbDS8bMnTipyRoUWesorAhcCU9ykngldEXxq99ysbtIM+DTtAl7otA3X/2A4jwAgwAoxACUegxBE5ed8/7lwCP+9aLj1vRbSakLWnTYSteZjIWBI6MTj9YvLymt/z9KWOtmcQP1Wkf1ihVtVqcG2LnjC8TR8oU5rfbpTw/wf58hkBRoARKBACJYrIv926AGZuWyjedbsQLUKoCdxFLrg3j4AF0pgVpE2xJnRF0nnyPHskE5rmWNkIr1AFbuwwAEZ1ukbo8BcjwAgwAowAI+AvAiWCyOfvWwNTNv2Kk9bSiXqJfyVxE1pEsKa8B5FbELCshpVUdW2DDAl1kz0pUO25yymP/yWEx8CYbkPhqhbdhE3+YgQYAUaAEWAEnCJQrIn8UM4xmLjuJ1iRvEWQtUG0iI72wN2JlvKCot0I3CfBE9qkL4haZKRZZUPYlEaVXOmLSBSg/BJ0r98G7utzI9SKqkZGODACjAAjwAgwArYIFFsin7dnJUxYNVNOYiMYDKLNI07J2LJMcm6eRy0ZVxG+UCGWVnZMeReC9yYXVWV9F30SkU00rOMypUrDI1fdCkPaXEkFHBgBRoARYAQYAZ8IFEsiH7/qO5iLk9koCOIkspRMaeRdCNWkpwlVk7bk2TyilXJlV9fDWNhHZW3Xsl2t77M/whgMbdMbHhs0hjIcGAFGgBFgBBgBrwgUKyLPOJ0Dby2ZAptS9xiETQSryZgSImciXHcCNuuIurKyUNO6hKYmbEPH4YOC0JcGqDMW/RHGRVNtE5vAS9ffD9FVIqgGB0aAEWAEGAFGwAOBYkPkB7NS4bXFX0Iy7sQmCFIRqyXREgxE8ETSbgQs5KpcRoJtUSwYXdgWOiKryrQ+Zd3tSbY25EZds57ohrRF5eZ2a0XHw6sjxkLduJpCzl+MACPACDACjIAZgWJB5LvTk+HlBV9A+qlsSbTk5xIf0pf4J2MzwWvCNXTcCNSFUIUpbQNjU157+Hn6olBlVR2jP3lEb9muNCz7bOpPTJVIeGvUP6Bx9bqkwYERYAQYAUaAETAQCPlDU8gTf2XhJMgwkTgRtiZWcaUiTylJwkasiF7oqOJSWsUQqmpmuWFPlWldIdeKGJuSMq0ERrtaQRmgrFmk8sdyMuGxyW/D3qPJuiWOGQFGgBFgBBgBgUBIe+T0TvzpX//jcG90vF4kUMGTJiKlJAldPHShSkI3uSnvou8ux7xLWzIrZKoD8jnD6I+bvsmeVJT9qB2dAOPveh6iwyKxAgdGgBFgBBgBRgAgpD3yt/6crLZZdbuVgkhNMkWsQiKYm1LEljKSCUqTQMUiqfMkEyWuXyQzy93zWlvItSLG5rwQyzJ8qnKzJ+W6nwePHYYXpn2grXLMCDACjAAjwAiE7ulnH62YgUvMlinPFu+k4d1K8hMeMyXNcuJJRdY6FgZMcqGv6tHvQ+uJavRFZfhl5IWO/lL6bvZEDV0XY2lC2sqzL6RkQLSh5aQs0qJYtju8Uz94avg9ZJYDI8AIMAKMQAlHICQ98nm7VwgSF4yoCE7cR8GumNKkKSlTEKNOutxvqivqK6l7XisLuVbE2JwXYlVmtKvtabk/7ehGVR19TUZHL8HMFb/B9yt/NylykhFgBBgBRqCkIhBy78hTcHnZAz+8bezYJnjOIFDlKSPpucqJ25FUxT8ZSwWTXFTAn4GKDX2znKqay+lXgzKqI8Xu7Wq5qqd0RTWqIP7J2Ge7ogmlr9ovg8eifv3oOKgdm0DmODACjAAjwAiUUARC7gzNiWt+BDqKVATkNk2AghX1TXSRKx2SSebUWrKKkCuRTov6eWqSrE15nRR6pkou9bQclRVpG30065nUPNrRZWZ9ahvz58+fh//78Ut4544ndW84ZgSKPQInzp2CHelJkJRz1PgcPpEOpUtdAaVKlYLYShEQUyECEqpEQ5u4BtA0KhHooddXSMvNhF2ZyZCMZzMcyD4i7GacPiGqVChTDmIqRkC1ylWhVlgctItrCHUjPB+eD2Snwt6sQ3Dy7GmoGRYLjarWgkply/tqtkjKjp/Ohp2IF11jHF5Dw6o1IbpCeJG0zY0UHQIh5ZH/vmc1jFsyVRCZi2csiE6ynk85qqCPLPlUebYiwi+ZVWWIv3OPXNaxahdLyJC4m9qee97QkQlZjGltz0Nf2RNy1Hvxpgfh2o69RRv8xQgUZwTmH1wLn2z8Ec5dPO/4Mq9Agn++623QKqaeRx2yM3nbb/DDnqUeZb4EYWUrwQf9xkJYuUpARDlu9XTYnn7QpQq1+7dWQ6B/YnsXeVFlyNn5bNNP8OuB1R5NDqrbGW5vfrXtA45HRRYELQIh5ZFP2fCLJGENJ5GfIEAl0GkrubnMpb6pwKiHCSFWZUSeLnlTu0pFmKS0KU9r0kXWTS6EWk8TMwkNPVVobleItDyvnU/mTWMiF+DzV3FF4MjJdHh3zTewOzPF70u8eOkilLXwyDce2wvjVk2HnHO5ftukOpXKVhAPFM8u/gzSTmV62KB2/7PhewhHsu+U0NSjvLAFH62fBYuSN1g2M2ffCriAf1v+2upay3IWhh4CIUPk32yeD4dx6EuTndljlRyH3/RPEaOlB0z3B8uFipuerifs45fWkWrStqgrbOS1IxTd21XtOOmPZz9NfRQGZIO6P3ki2aeU46kw6ffvYEy/60nxsoWTuSch6fAhOHgoGVKOHCYEoXy5clAroQbUrZUI1aslQOkrQnJu5WXDNNgapn0bDiOpZp7JARp6zj1/GiqWLg8R5StDZIUwiMUh6PjKUQHtdsqJYzB2/vsFsknD3ObwO3r245Ho8hsaRNYQQ/k0QmBF4ma749d/X+REnpqb4ZXEdd/m7V8JNzTqxcPsGpAQj0OCyGmYaMbmPwRRE5HJBEWSzEReyNXdoLS3vDc5VRVl+EWxZHAohRmDRM06Iq10KU0Bs6UoEvWFRH6550lKMgyG104ZoacKKCOSKlb9ITX36/7f/O/hlt5DoWzporudZ86ehcnffwOz5v0Euw/sg2Ppx0XXfH01a9gY2rVoDYP7DICenbpCubLlfKlz2WVGgH5+a1N3wvLDW0WceUa+N/bVLXqn3Ca2AXSIbww9arREb7hgv8n/W/utr+Zsy+pHVhekqxVPnD0Fn+LwfEFCq9j6ovr6o7ttzZD3fur8GahYpujel29K22vbL1LYk5EC0Qn8vtwRWEGuVLD/y4ro4n7Y9idknVJ/RIjQ6J8iNkuPFhXqRdeEJrGJkBiVALG4V3lFmnhCf5ncgiEyEyXpeORlRfI0PQL1x10oBCapKUmqecWyIPfMKTialQ57U5Nhy8FdsCNln7Todp36ujWZUz4jJwumLfwJRvcd5t6LgOdpkt30n2bBvz58xxF5mzuwddcOoM9XM6dDlcpV4O6Ro+HOG0dDfGycWY3TlxkB+k0tSt4IX237FdLxHbA/4fT5s4L4ifw/3vADjGjcG+idbH6IbEHSetiTecif5j10W8ZI0tUFn2+e49c7dl3PHLdWRE4PBU7CmQvn8nX9Tmxb6eScdfa64NwlNWnYygjLQgqBkCDyuTtwMoomQh0TzJQ25etUTYBrmnaDvg07QniFyiF1I9w7m5WbAz+v/RNmLvsF9hxJcrlO9+um/Iwl8wqdyDdu2wJ3PTUWDiRjfwoYTpw8Ae9NnACbdmyDqe9/WkBrXD1QCNBs8JeXfek3gVu1T5PJpuBksm92LIBHO9wIneKbWKlZysiLnbBhtmWZP0Kaua7Dzowk2yFnresrbhJVWxTTzPjNx/f5UhVlNPGtKAP1i0PJQiDoiXxl0lZIyjyKRKZ8YfJQ6R/FFDAOr1AFxnQcDIOb9ZCyYvAdUSkMRva4RnxmLP0Fxs+ZApkn0DtS1y2uX0Ah8dh/JBkWb14FPVt0LJSrT8/MgFsfvQ8OHz0SUPtX9eobUHtsLP8ILEYv/P113wFN1ApkIEJ/Y+UUuK5BTxjdbIB4/WRnn2aBO5mdTjPI+ya2g8SwamLULRPf42/DuiuPbAMaHWgSlfd+fOmhLXbNivLaaKtbjRZQs0qMWNJGS7fWp+2GjThkXbNKrDHbu1l0ouWscHMjUbjUiya8FWWgJWZOQssYPk3RCU6hoBP0RL5w79o8HIm7FX8LIaa712kNY3uNhMiKYXl6xSx1Q7eB0KdVZ3ht+scwf8MyiYHGQcd4zT+vXlwoRH7h4kW47/nHAk7idJuG9LuqmN2t0LycGTsXwpTtvxdq52ftXoxrtFPh6c6jbck8KRsf3m1CS1xS9mSnmz2GrQfW6Sj+TNBrAfM7+v1Z9g+hIxr1hpFN+nr0b0j9bmL/ipPnThu96lmzNfy4d5nP4f+x7a439IsqQevEr2/YE77btdhrk1QeXi60Ry29XlwJLCjaMR8/AaZJbov2roNLSCQXL9Kks4vCE6f8Jczf0KoPvHDV3cWaxDVkUVUi4K07n4DROKmNPCbyyDUOhAV95iGRn7vgfI2ttm0Xv/v5ePhjqfc/Cnb1vZVf3bs/RFeN8lbM8iJCYBl6qoVN4vpS1uDkua+2/qqzXuMDSPh24ZH2IzxIXNehSafuG5/QawNfgWbc32RB4roObSxDM/R1oDZe6Ho79EJCdw80UvAsPrDQw8blCKOa9IfRTQeA+7A+5W9rdhVQOYfig0BQe+QrD24xiMl99viNbfrB3V2uKz53wuGVPDL8DvE/56RfZ5hqSLf83PlzsGjjSujXtpuprGBJWlb25oT3C2bES+2brh3upYTFRYXAftzJbByu0S7KQJ55/cgE6Fa9hddm7bxn2mHNTKpeDamCi/jgazfr/hqclOdvqFK2Ijzc7ga4q8UgICxp5znaAa565WgxLO+vvUDp0y53w9HrpomGB/EB5tipLNz1LhISw6u5jFIEqj22c3kRCGoiX528XXieYpzM9G64b4OOjkk8KeMI7D9+GLJx1rugO2VHD9EbI9Naru6H8Q5e5WnovlcT612aFm5dBZk4OU0EZVBG+G00gKUibZQY+vRkH1E5DOpWqwl14mpIuY/vh6+7HVIzjsGclQvyrknZXrplbUCJfP4yZ554/cS6MOYvN0PXth2hamQklCldGlJSj0Dy4RTYj5PjaLb6rF9+Mq6KZq33636lkedE0SNAP5k3Vk716514pTIVoGfNVlA7PE68+z2BQ80pOWnwZ8omW6I0X+G7a76FtkjG3mazH8X30r5CvJ8Tuo7i2mq7kIDkm99QpVxFaBGE75zL43JAemfu9L15fq+f611eBIKayDce2uVBhAlhMfBI71E+UTuLyz1mrP0d5m1dCgfTaYiOhuUpwi+KRVKmDcJWRG5MItPEruo0ik/0SuSTFn0P21Nw7aayTe1ou8KMsmH0w9S+7Bh1Tfandmx1GNqpD4zqPQTKlSkr+mr19cItD8LGfdsh6ehhVSzrr9qx0Uo937L1Wzfb1u3Uph1M//ALqFSxootuQlw8dGjZxpC9/uQLYuna59O/gr5de4oNY4zCIE3knjoFxzKOQ1YOboKSlQGZ2dkiTs/KhBMnT4pNbiIjIqFFoybQvGGTkHpVQJPbnBCcvjUPth0OfWq11VmX+I4W18DqIzvgjVXOHgzo9dB3uxbBLTj8axXsJrpVLV/FqppXmZ09quiPh++1oQAVkBe98egesQVsBm7Ak4kb8FTCtejRuJd8VPkwiK4YLvZzD/QGPO7dpz9ptBFQ9tmT+MmFLOxHFqXPyPwFvI8VSpcFeghqhBMLaR962vc+kIFWMKw7ugt39jsk+kL9of0KIvAdf1XciKhZTB1o5mBP/UD2KdhsBS2Rp+dmA3nTgggJNUzQj+quLkOhvA+CW7x7HXy4YBqk5aTLusqAJkqDTA25tE3GRQvUCKUopi/5T+apyCqod9SiSNcx7AuDwpZhExXz+iMyyv4l2I/ryN+f/SWuC58Dj//lbujbuotVi1ChXHkYO+x2eOzj12S5am/f4SQ4huvRYyIC8+75SJrv94rU+N9GjfEgcatOR0VWhXtvuUPo6wcdKz2SdRzWD45nePeiXn38ObhpyPWW1S9cuACD7hgJu/Z73xjjq/cmQLd2nVzq0xr5TTu2wqqN62DlhrWwYdtmv5fa0cNL9w6d4b7Rd0LLxvZbc9Ka/KfeeNmlH+ZMGI5cbJi7yCxySf80/xd46KWnXGTmTMfWbWHaB5+bRSJNf4C/2DzXQ24lIC/8lR53Qp3weKtiQ0abwHzY72F4aekkRw8Is3YvgWH1ewB5s/4G2iN96vb5ttWmD3lJTFwr5TF9zbPqk4s+9nin7K5FG8y83vOvhvjFJV/A1vQDRt49cVuzgUAT5ZwEWv/9zc4FsChpo+OtY2MrRkJ33HhnAO7pbib1N3GkZVXqDq/NtsG18M92udWjnGbo05K6TWn7YBcu1zt00n6jJ3cj1I+eNVrhKoUegnDdy53m6XCc/239BVcheMdX2NopLXaObwq3Nh8oHiqctlFc9IKWyHcdSzJhLMmwbY1G0Kt+O5PcNfnd+vmCxIl8xUcXm/OYpqFsYVHIRUpKTEkX5lYkqc15jYU9i1J3uTlv2EahSZ6aeQwe+/Q1JPN74Obe11oYBRjYvgd0btIaVmxXeyqr+lv374ZerV1JytKAAyF5o3bh9Jkzdiou5fT+jj6+wsncXPR4ve8kdh7J2ls4dfo0rNvie2Ti4gXPJVbfzp0NY32Qorf2zHJanvftnO/FZ+SQ4fDGky/5fMihhwdf12m2bZVev3WTz/o0x8EqrMANW8jLsgu0fGpc7/vFASF2ulRerVJVeL/vQ/Dsn5/5nM1NuuSVzzuwCm5o2IuyfodAL5OjDtjZPIPzUMxhB5KdrzrGSY3mSm5pen9P8wbowcSXLbdqIktbxFLdMugF39y0n6FCIxC+bJ3GUUur8BBuh+tk9MKqrpbR3vj0QDJr95/w9/Z/gS4JzXSRo5geaN7Bg2g24X74/oQVuOSQPoPqdYE7m19j+zfGH9vBrhvYMZAAXu3+44fETGzy3PSs7KEtvP8P/9v2FfDhH9Py6hBBKk9Z2CA7+uMu1x61aEvNCBdp2TaRui8P0uijtq9jt3ZEf3SZOXbRM81IR503pn8i3oV7g3Zk78EGPvr6dqXs96but7xKpbxZut4qT571LfhL5t5sFSf5tB9mwo0P3oHD8tlBd1k0U91JuAcP1qBTvvwJtOTr3lZDHVWhB4qSHGjY+IUlE8UpbL6I1w6jlrH17FSKvJweCN5a9TWutV/juG16pfDQ7+/7TeLmBubsXQ7PI6aEbUkJQUvkybQJDAUkMwrRlcOhR728961CqL6On8yEd3+bjDmpa/ZszXoecuXBuuhQxkWOGZGnL5ug+upaH+uY7ZnNmOVkGvO097rQp7wIl+BfU8ZDGg6XW4X+7bpDbGSUUsXK+I82hwlUcLJ96tI1K+Cmh+7GQ1NSAtVssbGzcv1aeOfTj4LuetbiO0e7QDOv/dmNzWyvHg5BO1l6RVuw0sYtJTHQmvRHF4y3Hzp2AI7ebc6BapGrTMBT4GjI3i7QYS9PLJzg+LWCL3s0HE/Hy5aUELREfjj7WJ53jR5rx9rNvd6Tqat+hlzc91h77u7rzY311jiUZ3jP5AVrr1h7xDp2lxNBa5K26IVs12TbaAdloh1dpvI+2qFhNuM6lN7J07kw8WfvS4R6tuiAdVQbWD/ZmABn0Vk/RY3rNXBUg8i8/bV94InXXoRtu9VLK0c1i7/ShMlfQJqDQ2WKCom9DslzDE5gK0gY0+JqR9U3H9vnSK+4KZG36s9kQ2/XTzPSaY17MIfpO/7w2T16mKP5BgUd1jc3Qg+r5J2XhBC0RJ5+MkvijxxKoWV1a0I5i++sftiwyOTFEuliBYN4TXkhJ2uUoEiVyZwhlvW1kPTUxySyTAo9ZdOqfV1Jt6tjQ44JsqGDTmM8feFcOHPO2nNp11CtxyV9tJmWae29a7P+xFf1ynvv5qTepG+nwpUjr4X+o4cDpYNxWNnJdQRa5+MpkwJtMt/29mTZH0RCs4LbV2uU7zaoIk2Oi8N35nYhP+eM29kM9vLZONHP33fA3q6poPfJm91AyucnrYMMH6fnTdn+m+2RsPnpz5c4WS6QDwf56UNR1AlaIqdDQ8hjJmIiD7U+nmZmFVYf2ApE5trTdnkPLbxhk+dNtpQ96Skr+9qDpthcR3nEoo4Lw7r2RPTTXM/Ujrf+iOsy9HS7OAELZa5lss/nkMSXbV3n2rDKNa5V16XfGdn2w1iWhiyE1WJi4Y4RoyxKfIvogBXyzhv27gBPv/kKbN9jP5Tr22JwlLZq2hxoRzqayNanW09xipuTnr3/xce4bE09nDqpUIg6dhujUNPxldTrmgL2g/YrtwtZuJSpJAV6d+vPTnq0G1sNxJHW3dOsefetVenY2KIKNP+B+tIiuq54dRLpxzLA6dv/sOxmFhL8Tw48Z8KBZqbT7nuDcUIbbW5jF4jE6fz54h7KBOsF5p7FPY0FqckeVgu33qxh99Ek1EMd+uhgznvItQBjU9JIkw2jXa2gDTuMqZqpqjhzXOfJtggYU1JnSabT7u0rvR0H90Dv1p67T9WIUcuClN7JU86OMRTdcPD18qPPwJrNG4DIOT/h82n/A/p0a98ZHrvnAejRsUt+zFz2OrSJzW9fzfToxzc4S/2B5x/3kLsLNu3YAr06dXMXF3k+A9cC24XqDgjYzgaVi5O4bN7H0x9yfwPtFT6oXlfbar7XRrhWfw6XY9XBddC+As0OL2iYu2+FIy+Rlv091XkUNIuu47F4jtZ0rzy8TbxfbxBZo6Bdclx/ZOM+Ysc4cwXytF/483PbpWp08IxV+Bb3+bcLtFve811v89h2lybS0Tt4X4GG16+uE5hVPL7auZxlQUvk5GUTsaE/KuIq5a3Xmh4/kYm8S++HEUb8yuNJWU94y6KIFERC2lWKolzVlcVSz0OOHre3QO+naS94aVhq6fq6fdExVNF5HbvLKS+6Zu4fmcT8US9D5mE4s5xGEqh9qnbmLGIXwFC+XDmY+OYH0PumoT6XOtk1Se/Rr8fPXSNvhece+gdUrujfbGg7+5erfMSgYZCLD0+Pv/qizy4cwp3ugiHQCWF2gbyuQAQnDwS+hly99YFIzt9NYbzZ0nKxwYgfHqau52/8wx48+MgmEDk/3+U2r2vs6US1/rh2nD6XO9B9eLfPgzB6zr99PqDQRi5WYXHyJiuxIaNRgH/3uBsql61gyHSC1s/Tg+BUHwf+pJw4Jg68CfZ5BPqa8hMX/PEyP606qUO8REHHMmf9TTpmPWIzkVdCiswfbUXLzHlKW8lJZhd0PW/t6/qGHgrMdpXc8CJ0mdbX9b3Fhp6u6E3Rf3nt6jXhx8+nAg0tFzSQd977piGwCjddKS5hSD/7iV2HAnwEbH6xy8H9wO1C2QBNnoqpEGHXFJTDP9QlJRzHE9mcrN9/Ak91y89GOZcLRyLJnrgxja9Aw9zu6+oPnThuO0udhtKtSFy3NaxBd9v943dlJGv1YhkHLZHTD0N6tUhK6G2eOGM9XByFy9JIT3jl5JXSR+RRhmlZZpJRGclVGeka+rpMy0x6hgdt9TPAV9vokrvaUbZ89cdo160d3WcRq35SOjbceuJQTi7uI2+6HvPRjVbdza+sWcPGMO+/38LLjz6dXxNGvQO4//rgO2/CfdgPGrJQTtCudbRVra+QckRvp+tLq/DLaEtNu1AmQOSac876/1tz+6culJz1vmvx9De70K92O48hZLs6wVDeMaGpbTfo8BZzoK1X7ULH+CbC06cHAasP1bd7X+7kND27fgRzedA+ClfCYZSs8/juDHmWwpHs49Ag1nMotmFcbamj9ESG0kTGFESk0xi757WOUjHqmPNC6PRLtaHbF/aVjBoXdsWX7KNKGu0Kffxyl2O+SWJ9oeb+lZKWKitQHWy3MIesS+NhKLTN6tD+18D/Zk6D/874Go4VYGnVo/96Dmb857/FYhemuOhY91vjkk8+Yj9b3KVCIWWcTFBKOZEWkNYPo8dlF2hIu6QEu6NUCQfamSwUg5NXHWlI5OatZN2J3eq6x+JucwUNObg8uTiHoPXIw8pXQi9Tro2m9897aFKbRehQp7lYQ2l4r6gr1mIjoUnPW84Iv2iss1YzxHWe9ClNHq2O8Z27XM+t5VhmJma3fui2xZnpZIfaNrcv8tqWKTb0lEzPmtf90DHqlSldBro2t/b4tuMkOO2RU7uReJJaYYfq1eLhyXsfhg1zFsEXb30oZnDnp80/Vy2HqbNn5Kdq0NWJ1hvzeOlZNh68Egwh3MF7YBryDESg95N2Idx0xredbqiXO5loGKgVA0WNlZP7eAo3wTEHJysozPr5TZ/AyYHFOQQtkUdXjpS4C8/0EmxMth6CoRPChrXtY+nBmm+ceO8sPFaTVHmwpoaMZCkkRCNQ2pQ15O4JrUOxTpOOe17XE3KtiLFXvUswss9gKF+2nK7pEq/ZriaLqPqxVaNdygszU7ZsWRjcd6A4mGM9kvpzDz0GiTVr+dXkB//91C/9YFWODA8P1q659CvSAXEezsdhGS6NqIyTBwInIwRWtkNRduaC9V4Q+lrotRit4Q/FQGez+xu8TYDz146dfm4x3641aIk8Hpebac+W3jMv373R670a1XUQVChbXnnVRIgmj5jSwtt2k5s8Zxd98oJVfWrXSBOZewlmHbNnrNvV5RSLtlR/DLlLXrcvvXTqQ6VyFeCuwSO9tA6wcO1yF4/cWI7mtUbhFJCXPnbMX2H5d7/AB/98A2KinD1Q7DmwD8562ezGW08vXDjvreiyyUvjqEkoBCfnbpOnRFtmFiTQEqlkB0P08QU4B7wg/bs8dY2prJbNl74iaP8kW/bXLLzC5iAks65Oh+Xj5Dtd15/4Co8FfP7UDn7doP3V1KpaTXmokkCPnciARTvWWCIaUyUSHr9mDJYpsqVIJY2YaprlOq9jre+e90HgpCqCIGhKKSNW7WiZl3aMEQNtxtC7BC+MeRjivHjZv6xcDEcz1PCl6kfd6v55xOIaAvhF79FHXjscVs+e73jN+MFD/u3TTueBl4RAJ6PRsayBDM1j6jgy9xXuilWQ8A1uy+nkIJB21RoWpJmQqmu3Dp22KqUjZktKOHcxsL9tb7hVREevOIegJfK6MTXyvEzlsc5cO9/rvRjYsis8PHA01iGPVn30O2YV0x8V4QUbHrD0eg3P2ZBLT9x4501yH4QubWpbqm3xvlvJjHblenOjPUNO7+mV96/7oOKnbrkPhnTv5/W6p8ybqUYcqF2ycREa4k5vwRAqVawI/xv3H0ee+b6kAy5djgjzPUydkVk8iNzuOgmUQG9zW7FMeduzxandpXhCmpOhcdJ1D+TRz8GNT+wCDatH41GpJSU4OUnOyQEjxQUvWg9vF2jPgIJ+4vDc9uIcgnYssFF8osTd8EwB1uzbCn9sWwl9mlrv0jOi80CIC4+C9+Z8CalZerKONnBJnCwm+VjJKBLJPB3RqJKTl2wUaxXZK+tvraPqSyXMiLwuJKlKC7k5jwJVVC0qFp659X4Y0KGHNGPxPXf5Ali2aW1eibLXol7B9sjOM1jwVGXcrKZ/9yvh6x++82nsQIrrZMY6NWsDDbl7C8GyJttb/5zK4+Nw5MkmHD1+DGh5WyBDl+rNYH+2/QY1k7bMhWc6j/a76cnbfnNUJxT2CXd0IQ6VYivZEwodMTscd64rCSHGAcHS7nbNo+uUBDjyfY1B65FHV44AGl539aAvwYT533g9PIRQuLJpB5j28Dtwb/+RUCsq3qN+nj3twSpPmLxZ7Q0Lz1bldVo+AVgCTUXSG86rgwJPe1LR85x0bJfehVOdxPga8PcRd8LPb0/ySeKnz56BdyZ/4nF9dXBYPdCT3WhWf+6p/C/fuID17cIVbu8Ga8ZX91ll/tLFuIOd74lDPg0ESWFCrD2R/750UcB727tmG0c21+C65zdWToUzDo8apWHhj9bNhPkO97ceWKejo34UF6Wm0Ym2l/LtroUeG6fYVgpRhWYO8Ji5a3GIXl3RdTtoPXKCoG3txnDwGG2igSRHAYkuJf0ovPHjRHhh+L1SZvFNM9lv6zVUfA6kHYJ9aSmQdVIdwqL1iVRNwTVLpCoLZURLurwP/91z1QjIOJGtrLnVVXbcDKKu1KPiUjhJhJaM1a+RCHUTnL3ffm7CW5BE65IN+9Jkl+ZtVT8CFy3BbVVvuPd2uOGaITD6uhuha7uO4E683lrbumsHfPPTLG/FhjwqwtVTqR6v9o83NFwT9O74tz8XiBnzriWhlYuLtt8KlfC7d9QYoLkHgQrkGfbFjUecEO7KI9vg4T8+hH92vwOq+TjNLB234Hxp6RfgZMkZXQftIV6U+4QHCruC2GkQ4fsBlWzTe/IvNs+Fu1sOLhb7K/jCq3GU/d872jTm4w0/wN9aD/FlqkSXBTWRd6zbAmatwffixHmKaSmat3EJ0AS3+wfcZHvzEmOrA30KM/Rt07UwzXvYfuurCTB70a8oR6+fiBy/FDzQo03gPZzvfv5R9GHG3B+APrS87JZhI6BDyzbQvFETqOpGwqSceixNEPi4z/8j6tp9NarbwEXFiad6x+MPwrQPJ0Kfrt5fP7gYDcJMmTJlxBwCX5vq0MPQXU+OhfGvvA007yBQYVTT/o6InNpLO5UJD/7+f9ADt+GkT82wWAgrWwlO4navRNxLUjbBguQNjia36f7f0dx+W1utW1zi8ri0rGlUojjsxNc1/bx/JWw5vh+e6jTKZQMVcx16l77qyHbYl3UYHmg73FwUMmlabkcPdFvxWn2FXw6sgp0ZSXBzk37QPr6x1znotP3t6iM7YDkeKEPbsn5+1ROQn9n0vvoSjGVBTeRdG7TGzV7KwHm91EiRFgE5ecmPYiOXB68aFYy4FlqfXv9yPEycPU2Qt2iEMFGhHC5/6tOhm84GJKYh9cmzvnGxRdurvvrROENGp4KF4adqRATQyWtU7k+on1gXaPtXc+jeobM56zU98sE7xYNF66YtIDYqBo5npEPSYf9mwHs1XkQF1+I6fDq73VeY88evUKdHa+jStgM0rFtf/PaPHk+DdVvUHgK+Knspo524RjbuC9N2eJ9Eaq5Kk0UXIVnTp6ChW/UWUA+P5CyJgd5/b1vhOrnTCgfaBe6B398T68ppk5jqVaKBXlOln8mB1JMZLnu239JsAITqenw6Ue1FHMmxCzSn47WVkwUeNDJUDTGhMwHo0B06CCgTj8PNPe+64cwhfMikh87iHoKayMsSMTXtCL9sXGp45Nr1JA99ypKfcKg9FZ4YehdU9TH0XRxu4vGsDHjxk3Hwy4qF5IgbeIiRCvGAA3B1zz5QFl8rBDLMX2b/fpaGuelzOJ+HgowadoNHl2sl1IBbrhvh8RDhoYgCenDw9+HBys7lkt1/6122RK77tnzdaqBPoMKNjXuj55IEax3seR2oNmmLzofbed7zQNkPdjvtqjWCOCSiow7X6dNQO5GYr8mJ+7OOQJs411GtYMdB969FTF2gY0qdbF9LdQiPA9mp4qNteIsP5qSWCCIP2slu+sb0b95FJwWBiYwiLkov2LoKRr3/OMxc6WyWbJ6x0El9/etsGPTI7UjiSKp07TqYcKCCIT3765KAxd/OmR0wW1aGyJunY0CtwgO33W0lLnYymqE/YvB1l+26HuswUhBLUXSAhlJf7n6n2Fa5KNoLxjZoNcwznW8JaNdoeD2Uw9OIxxUBOOvdHYN9+IBTEkLQE3m3hm1w9jnOXqcZ5eiF03prl/XdmKeJZq/P+gxufu9xmL50LmThaWChHjJzsuHLuTNg8KNj4IWP3wHaAMWYVU9YKDwIE0rTbPU+HQM7rJ6RlQU0pFuYYfpHEyHey8ztBjjkPnTANYXZfNDYfuj2ey5bX+i97VtX3gtNomoXah+icL34u30eKFHrxr0BSh7ova2tH2C91fEl3xviRE5D5f/ocKOvS8xX2QEHSyzzZTjIKgX10LrGalj7vvD+z5NpPFmuBdduKeZFUJ7p3tQkeGf2JHjn+0nQMCERmtduCPXiakBcZLTY5tTQxQTSn6t3Ky3lfZtMWynKpq1sWMnyzBpd1wkqwiq5p0/BEXznuSt5H2zctQ227tslK1E/qDGKdR1zXsgBbr4q8B7dsrUrZR8K6fu/74wXE+Z8mf/3Y8/B9j27YOfe3b7UQr6sSf2G8OoTz8Mzb75yWa6F9sn+V4+74autv8Ks3YFf7tMuriE8in+oaTMaDhKBAYntoRLuODZu9fQCQ7I/xImcAOiS0Axe6jYGXl72pV+TJn2BdzD7qK/iYlMWEkR+Q6cBMGnBLPS0cwxCE0SKXyKm26HITbwzxuyOlH3i4y7Pe6csGVDrW8oN/jQSsj2jXS2n5lWayiz6o9tx74973lNPGDPapRxlqDkBBsaRYRFw27WBf+c4EN+5057p702c4HNzFuqJP6Ft81bw5tMvAU1QswvVYmLhh8+mwIMvPgG/Ll5gpx7S5XePvBVoGd5jr74o5hwU9cXQkO+tOGmqe/Xm8CVuz7rp2N4Cd6FGlRgY3WwgdMIzpTl4ItAdJ/1V61UV197PAnqfm99wxOH79vzaL6p6LWPqwft9H4Lx67+3ncnupE/HT+tlwU60Q1cnJIicJr3d0mMwjJ/3NSKdR5gG7JpEtceqCwy5EhD5CQLUCl7kZj3JmLKikGsDGBtJnVYCinSZaoL+SApTZrmFnlB3kWNG5OkLg0d/AO4ZPirgk9yoKVoaRXum34jvb9dv3QSzf/sZfl74e75JndahX3/1EOjbrRf4czgELW+b/N4nQEeeTpgyCZauWek30SXExUPrZi2gc5v20KlVW2jTrCVdokuoVLGSS97fTCCWhml8Psbr/OH3efkaiaAHpXYtWkPntu2hc+t2/l6GmE1OntFBnDX9/e4/Yc2RnZBzzvkxkPQevFVsfRhUt3PITsDyGzQvFZzs8U1r6emVw0pcSjZj50LYnZnixZq1mGarX1mrjUthZIUwl7x7xtvISIXS5eDcxfPu6o7ygTqYhA71eQXnUexIT4LpO/+AjWl7/fbQ6TUOjQL1x1GPkhDwtE6DGYL+eq9/eywcwg1hKNB7YRHr7mMskiovLktxHxVIsdYhA4IdlZyymBciWUnnDXikAUPPRU5VzeWyY8KeFOt2pW1qR+tjQunJMp9yUnFrp2ZcAiya6Hv7U+pOIEP2iRzYsnO7GPKm9eKpx44Cyc6dl38AaClaeJUwCA8LA3rP3aR+I2hYpx5UKB+YYVXCiJaYUR827dgKmdnZ2EYDSMKDV2grUyJ+/YkMjwDadIXiUAy0nG/b7p2wecc22Htwv7g+fRBJVERViMQlf+TF06gMpWtUSwjoxjEaM5phvSFtDxw5mY7LfHC5D35OnD0lhsqrImlE4NGoMRUjoBV6VLXD7Xer03Y59kSAZmVvxNGQ3bgOWmJ9Uiw1owek6IrhULV8GEQh5oQ37YwWgURenAPtFrg9/aDw0NNP5UAW/vaycL04ySuXpX3Yy4uld3SKHo0A0YNRlSI6VS1YcA8pIp+zdhG8/M14gZ0mPBG7ExxxoyI8F+ITcqpOCYqQYEU2j+ilPK++ix1RX9SQ9pUNaULKhU13ucoLDfUlukdfbnlDR/VfX59LP0TXZd23Hn0ebug3iLrAgRFgBBgBRqAEIhD0s9bN92RQu17Qo2k7QaJEbMYsbkrrvE6bY5rhTR+USaKltNprXcmN+ua81jfV13q0N7pIW7RjtOGm4yJ3K9O2XOya2qW67vX7derBJG7+gXCaEWAEGIESiEBIETndn7GDbpVrUIXrqu4YpXVex1Rklht5FLrIZR6HJkhDBkGamFRxKW3cpR7uka6ruMld7Gsdsiz0tABjndexbB3tqjKjXa2rbGBUDt9fP3P3Q6oGR4wAI8AIMAIlFYGQI/LaMQnw+LC70MOms77pY/auVV57strr1XkkyIv4MTx5S7ny1Mljx3I6+UuuWye5KlMycb65sCF18/qjvHVt3xyb26e0Oa/bE3KTTZWnvsi+X4R/3vc41K1RuOt+S+r/FHzdjAAjwAiEEgIhR+QE7nWd+8H1XQYqnLW3Sm6tFpk8WiFWZRSppNDUaSu5KqPZ5kYQerJAeOmmvIthJF7ZjtTVnr2wo0RG2i0v2iOZm5zysi+XYNSg4XDTNYHbTMK4Pk4wAowAI8AIhBwCITXZzR3dv41/Edbs2qQ4E5lO/sOYPF3SVgL3PJUoshWxUFX1ZUVZ7k1Ott30tD3VGVls1lH9ESJVX4rEt9EfF7tY5NI/bLZLy3Yw9U1nJ4pR9zkwAowAI8AIFG8EQtIj17fk1VsfgUTcuU2Qp+RDg2A9PWasRTriQwxJVsRXnpxEFISOKRZCL3kq0/pCDzMiT18YFJnLNOWFUGSNd+FCX4jkl5d8PRxKf/+pf5kUOckIMAKMACNQ0hEIaY+cbt6ewwfh/vEvQVpWuiBJ7cHqWBApEqO3vFlueMvItjItWNfTriBaWabri9hdjnldLg2qvNITFqghoUdXI9MU6/ZFjCVxVaPhq9c/hEaJ9UiRAyPACDACjAAjIBAIaY+crqB+Qm1476/PQkx4VddbSiypP7rEKk9lSq7fQcs8CVWZEFAaZUKsy1SeskpEVWR9kZLvtXW5jmWRi57ICBv4JfRERmhWi4qGiS+PYxLXuHHMCDACjAAjYCAQ8h65vhLyzP/x6euwPzXZhQi1p+zNM3aRE4cqF1jHmlSlOI9kdV6pU0XRrq4nYsHFXuSqooe+WY5V6+ERlxOefxMa4c5oHBgBRoARYAQYAXcEQt4j1xdEnvlnf/83dGxo2kNbkavWMbxmIlhBsqrEPa8rCLlWxNg9b+ipMm1U6JlsG3qYoDIddBpjY006lan6XVu1h2lvfcwkrvHimBFgBBgBRsADgWLjkZuv7JXJH8G3i+ZIzhSk6H0Wu3KAkTxRkf65ecRSaCE361HjmBcis1wRMtmQYpMOlWm5qV2lKJaYvfrw06TEgRFgBBgBRoAR8IpAsSRyutoZi+fBq1PHw7lz58TFG0PdbkQr+ZSYlNQ00WJK6WliNdc31zHreZOTba2nY2FXyM3tXsJTzMrAKw8+gevEA3++uACCvxgBRoARYASKFQLFlsjpLh1ITYG3p38GC9YvN4jUk5gFfdMXsa0qJoY1y6mIFKSOb2KWekJfJIUhH/WFUdFe/y494dl7Hoa6+F6cAyPACDACjAAj4ASBYk3kGoDZS3+D8bO+guS0IyhyTqxmYhc8Tl+CnPOI3SBsRfQ670L81Kqu666HBmtVqw5/H30P3DBgsO4yx4wAI8AIMAKMgCMESgSRayQ++2kafDHnG8g8kS32LBdyJFbBzYpozQQsOded+LEW1ZGVjFgYMeReiJsapIr0D+OqeEb2X/8yGu4bebvoCn8xAowAI8AIMAL+IlCiiJzAOXf+PEz57XuYPv9H2HeYlqrlESuVW3rO3uSiqqwv7Ag9+UVmJWPLWORJhglaUnbzNcPh9mEj8J14WVLgwAgwAowAI8AI5AuBEkfkZpQWrFsOc5bNh5+XL4SzNCnOkpglUZs9dbJhSfikSmQtDYlYEricxDaoZz8YeuVA6Nu5BylxYAQYAUaAEWAECoxAiSZyjR556QvWLYM/N6yGlVvWwd5DSZKRBTELZhZ5TcpUz4XYTXpmgq9XMxE64yEnvdp3hr6durP3rQHnmBFgBBgBRiBgCDCRW0CZlnkcNu/ZCbsO7oV9SOpJqYfhaPoxyMjOhBO5uWJJGxE2LRWrUrESRIZFiL3Qa+KktXo1auFWqvWhRYMmEIdbq3JgBBgBRoARYAQKEwEm8sJEl20zAowAI8AIMAKFjECx2aK1kHFi84wAI8AIMAKMQFAiwEQelLeFO8UIMAKMACPACDhDgIncGU6sxQgwAowAI8AIBCUCTORBeVu4U4wAI8AIMAKMgDMEmMid4cRajAAjwAgwAoxAUCLARB6Ut4U7xQgwAowAI8AIOEOAidwZTqzFCDACjAAjwAgEJQJM5EF5W7hTjAAjwAgwAoyAMwSYyJ3hxFqMACPACDACjEBQIsBEHpS3hTvFCDACjAAjwAg4Q4CJ3BlOrMUIMAKMACPACAQlAkzkQXlbuFOMACPACDACjIAzBJjIneHEWowAI8AIMAKMQFAiwEQelLeFO8UIMAKMACPACDhDgIncGU6sxQgwAowAI8AIBCUCTORBeVu4U4wAI8AIMAKMgDMEmMid4cRajAAjwAgwAoxAUCLARB6Ut4U7xQgwAowAI8AIOEOAidwZTqzFCDACjAAjwAgEJQJM5EF5W7hTjAAjwAgwAoyAMwSYyJ3hxFqMACPACDACjEBQIsBEHpS3hTvFCDACjAAjwAg4Q4CJ3BlOrMUIMAKMACPACAQlAkzkQXlbuFOMACPACDACjIAzBP4fRu6fNAzX/WMAAAAASUVORK5CYII=">
+<footer><span>© GNS SENEGAL — SunuOfficine · Programme Partenaire Commercial</span><span>sunuofficine.app · +221 76 276 97 89</span></footer>
 <script>
-var M=document.getElementById('mn');
+var L=document.getElementById('lg'),M=document.getElementById('mn');
+document.getElementById('hl').src=L.src;
 document.getElementById('bg').onclick=function(){M.classList.toggle('open')};
 M.querySelectorAll('a').forEach(function(a){a.onclick=function(){M.classList.remove('open')}});
 var A=[].slice.call(M.querySelectorAll('a')),T=A.map(function(a){return document.querySelector(a.getAttribute('href'))});
 window.addEventListener('scroll',function(){var y=window.scrollY+120,c=-1;T.forEach(function(t,i){if(t&&t.offsetTop<=y)c=i});A.forEach(function(a,i){a.classList.toggle('act',i==c&&!a.classList.contains('pill'))})},{passive:true});
-</script>
-</body>
-</html>
+</script></body></html>
